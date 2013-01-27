@@ -1,9 +1,10 @@
 class UsersController < ApplicationController
   def show
       @user = User.find(params[:id])
-    end
+      @titre = @user.nom
+  end
 
-    def new
+  def new
       @title = "S'inscrire"
-    end
+  end
 end
